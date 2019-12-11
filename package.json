@@ -2,7 +2,7 @@
   "name": "abramson21.github.sprint_12",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
     "dev": "nodemon app.js"
