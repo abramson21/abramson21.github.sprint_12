@@ -9,3 +9,9 @@ app.use('/', cards);
 app.listen(PORT, () => {
     console.log(`App listening on port ${PORT}`);
 });
+
+app.get('/*', (req, res) => {
+  res.statusCode = 404;
+  res.statusMessage = 'Error';
+  res.send({ "message": "Запрашиваемый ресурс не найден" });
+});
